@@ -6,7 +6,9 @@ import google.generativeai as genai
 from PIL import Image
 import os
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+
 st.set_page_config(page_title='Prompt Vision Bot', page_icon='/Gemini/chatbot.ico')
 
 # Loading gemini pro model
