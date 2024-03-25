@@ -45,7 +45,7 @@ if image_file is not None:
 # submit button
 submit = st.button('Ask')
 
-# When button is clicked
+# When submit button is clicked
 if submit:
     if prompt != '' and image != None:
         response = get_gemini_response(prompt, image)
