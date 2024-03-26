@@ -55,5 +55,5 @@ if submit:
         response = get_gemini_response(prompt, image)
 
 
-    st.subheader('The Response is')
+    st.subheader('Response:')
     st.write(response)
