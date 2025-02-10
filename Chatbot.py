@@ -7,9 +7,13 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 st.set_page_config(page_title='Prompt Vision Bot', page_icon='chatbot.ico')
 
-# Loading gemini pro model
-model_vision = genai.GenerativeModel('gemini-pro-vision')
-model_pro = genai.GenerativeModel('gemini-pro')
+# Loading gemini pro model  (Older models)
+# model_vision = genai.GenerativeModel('gemini-pro-vision')
+# model_pro = genai.GenerativeModel('gemini-pro')
+
+# Newer Models
+model_vision = genai.GenerativeModel('gemini-2.0-flash')
+model_pro = genai.GenerativeModel('gemini-2.0-flash')
 
 def get_gemini_response(prompt, image):
     if prompt != '' and image is not None:
