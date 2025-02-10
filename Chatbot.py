@@ -13,7 +13,7 @@ st.set_page_config(page_title='Prompt Vision Bot', page_icon='chatbot.ico')
 
 # Newer Models
 model_vision = genai.GenerativeModel('gemini-2.0-flash')
-model_pro = genai.GenerativeModel('gemini-2.0-flash')
+model_pro = genai.GenerativeModel('gemini-1.5-flash')
 
 def get_gemini_response(prompt, image):
     if prompt != '' and image is not None:
